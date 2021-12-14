@@ -6,9 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "ServerAPI": "json-server --watch server/db.json --port 3000"
-  },
+    "test": "ng test"
+    },
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.1.0",

@@ -5,10 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'MaCsO Co.';
+export class AppComponent{
+  title = 'Store-App';
 
-  getName(): void {
-    console.log("Hello!")
-  }
+
 }
