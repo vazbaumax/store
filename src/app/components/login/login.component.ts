@@ -1,6 +1,6 @@
 import { validateVerticalPosition } from '@angular/cdk/overlay';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
@@ -10,10 +10,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  form: FormGroup
+  form: UntypedFormGroup
   loading = false
 
-  constructor(private fb: FormBuilder, private _snackBar: MatSnackBar, private router: Router) {
+  constructor(private fb: UntypedFormBuilder, private _snackBar: MatSnackBar, private router: Router) {
     this.form = this.fb.group({
       usuario: ['', Validators.required],
       password: ['', Validators.required]
